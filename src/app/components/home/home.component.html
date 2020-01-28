@@ -1,6 +1,19 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid animated fadeIn">
   <div class="container">
     <h1 class="display-4">Heroes SPA</h1>
-    <p class="lead">Here you can see some heroes taken from an API. More info in about</p>
+    <p class="lead">Here you can see some heroes taken from an API. More info in <a [routerLink]="['/about']" routerLinkActive="router-link-active">about</a></p>
   </div>
 </div>
+
+
+<div class="card-columns">
+  <div class="card">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ title }}</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
